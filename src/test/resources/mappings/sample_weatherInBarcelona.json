@@ -1,0 +1,63 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/data/2.5/weather",
+    "queryParameters": {
+      "q": {
+        "equalTo": "Barcelona"
+      },
+      "apiKey": {
+        "equalTo": "OPEN_WEATHER_API_KEY"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "coord": {
+        "lon": 2.159,
+        "lat": 41.3888
+      },
+      "weather": [
+        {
+          "id": 801,
+          "main": "Sunny",
+          "description": "sunny",
+          "icon": "02n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 25.5,
+        "feels_like": 25.67,
+        "temp_min": 14.22,
+        "temp_max": 28.66,
+        "pressure": 1022,
+        "humidity": 75
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.57,
+        "deg": 130
+      },
+      "clouds": {
+        "all": 20
+      },
+      "dt": 1681154575,
+      "sys": {
+        "type": 2,
+        "id": 18549,
+        "country": "ES",
+        "sunrise": 1681104012,
+        "sunset": 1681151095
+      },
+      "timezone": 7200,
+      "id": 3128760,
+      "name": "Barcelona",
+      "cod": 200
+    }
+  }
+}
